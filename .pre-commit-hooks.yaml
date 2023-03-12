@@ -1,0 +1,8 @@
+-   id: no-commit-on-main
+    name: no-commit-on-main
+    description: fail if the developper would like to commit to the main or the master branch
+    entry: pre_commit_hooks/no-commit-on-main.sh
+    language: script
+    fail_fast: true
+    minimum_pre_commit_version: 2.16.0
+    stages: [commit, push]
