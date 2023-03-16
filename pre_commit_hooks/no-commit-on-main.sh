@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 # src: https://medium.com/supersonic-generation/git-deny-commit-to-master-branch-with-git-pre-commit-hook-71e868d1a528
 readonly current_branch=$(git branch | grep '*' | awk '{ print $2 }')
 
